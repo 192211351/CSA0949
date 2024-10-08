@@ -1,0 +1,11 @@
+import java.util.Arrays;
+public class alphabetic{
+    public static void main(String[] args){
+        String[] names={"Banana","Carrot","Radish","Apple","Jack"};
+        Arrays.sort(names);
+       System.out.println(Arrays.toString(names));
+    }
+}
+
+OUTPUT:
+[Apple, Banana, Carrot, Jack, Radish]
