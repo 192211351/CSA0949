@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        //int price,time,rate;
+        System.out.println("enter the price:");
+        double price=sc.nextDouble();
+        System.out.println("enter the duration:");
+        double time=sc.nextDouble();
+        System.out.println("enter the rate:");
+        double rate=sc.nextDouble();
+        sc.nextLine();
+        System.out.println("enter the citizen:");
+        String citizen=sc.nextLine();
+        if(citizen.equals("y")){
+            double result1=(price*time*rate)/200;
+            System.out.println("result="+result1);
+        }
+        else if(citizen.equals("n"))
+        {
+            double result2=(price*time*rate)/100;
+            System.out.println("result2");
+        }
+        else
+        {
+            System.out.println("invalid");
+        }
+        sc.close();
+    }
+}
+
+OUTPUT:
+enter the price:
+500
+enter the duration:
+10
+enter the rate:
+2.5
+enter the citizen:
+y
+result=62.5
