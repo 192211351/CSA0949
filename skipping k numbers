@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class skipping_numbers {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the first number:");
+		int n=sc.nextInt();
+		System.out.println("enter the second number:");
+		int m=sc.nextInt();
+		int i;
+		int k=7;
+		for(i=n;i<=m;i=i+k+1) {
+			System.out.println(i+" ");
+		}
+		sc.close();
+	}
+
+}
+output:
+enter the first number:
+50
+enter the second number:
+100
+50 
+58 
+66 
+74 
+82 
+90 
+98 
