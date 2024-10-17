@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class simpleinterset {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the principal amount:");
+		double amount=sc.nextDouble();
+		System.out.println("enter the year:");
+		double time=sc.nextDouble();
+		System.out.println("enter the person is citizen or not? (y/n)");
+		char seniorcitizen=sc.next().charAt(0);
+		double interest;
+		if(seniorcitizen=='y'|| seniorcitizen=='Y') {
+			interest=(amount*time*0.12)/100;
+		}
+		else
+		{
+			interest=(amount*time*0.1)/100;
+		}
+		System.out.println("simple intrest="+interest);
+		sc.close();
+	}
+
+}
