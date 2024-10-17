@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int len;
+        String uppercaseconvertion;
+        System.out.println("enter the string:");
+        String string=sc.nextLine();
+        len=string.length();
+        System.out.println("length of the given string="+len);
+        uppercaseconvertion=string.toUpperCase();
+        System.out.println("uppercase string="+uppercaseconvertion);
+    }
+}
